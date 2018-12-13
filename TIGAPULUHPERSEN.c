@@ -253,16 +253,72 @@ int main(){
 //    printf("Console Buffer Width: %d\n", csbi.dwSize.X);
 //    printf("Console Buffer Height: %d\n", csbi.dwSize.Y);
 //}
-	fullscreen();
-	hide_scrollbar();
-	loading();
-	hidecursor();
-	logo();
-	Sleep(1000);
-	system("cls");
-	hidecursor();
-	menu();
 
+hidecursor();
+int p=1;
+int press;
+int u = 0;
+	
+	while(press!=13){
+	gotoxy(45,12);
+	printf("Jalankan Program Fullscreen?");
+	gotoxy(45,14);
+	arrowHere(1,p);printf("| YES |");
+	gotoxy(45,16);
+	arrowHere(2,p);printf("| NOE |");
+	press = getch();
+	if(press == 80 && p!=2){
+		p++;
+	}else if(press == 72 && p!=1){
+		p--;
+	}
+	}
+	switch(p){
+		case 1:
+			hide_scrollbar();
+			fullscreen();
+			system("cls");
+			for (u=150;u>50;u--){
+				hidecursor();
+				
+				
+gotoxy(u,16);red();printf("__          ________ _      _____ ____  __  __ ______ ");
+gotoxy(u,17);yellow();printf("\\ \\        / /  ____| |    / ____/ __ \\|  \\/  |  ____|");
+gotoxy(u,18);Green();printf(" \\ \\  /\\  / /| |__  | |   | |   | |  | | \\  / | |__   ");
+gotoxy(u,19);Blue();printf("  \\ \\/  \\/ / |  __| | |   | |   | |  | | |\\/| |  __|  ");
+gotoxy(u,20);Magenta();printf("   \\  /\\  /  | |____| |___| |___| |__| | |  | | |____ ");
+gotoxy(u,21);BoldCyan();printf("    \\/  \\/   |______|______\\_____\\____/|_|  |_|______|");		
+			
+			
+			reset();
+			system("cls");
+			}
+			
+			
+			loading();
+			
+			logo();
+			Sleep(1000);
+			system("cls");
+			hidecursor();
+			
+			menu();
+
+			break;
+		case 2:
+			system("cls");
+			loading();
+			logo();
+			Sleep(1000);
+			system("cls");
+			hidecursor();
+			menu();
+
+			break;
+	}
+	
+
+	
 	return 0;
 }
 
@@ -275,6 +331,7 @@ void gotoxy(int x,int y){
 }
 
 void loading(){
+	system("cls");
 	hidecursor();
 	int r,q,o,i;
 	gotoxy(45,12);
@@ -308,13 +365,13 @@ void menu(){
 		
 		logoformenu_top();
 		
-		printf("\t\t            ¦¦¦¦¦¦¦¦¦¦"); arrowHere(1,position); printf("  Yuk Belanja!"); printf("            ¦¦C\n");
-		printf("\t\t             ¦¦¦¦¦¦¦¦¦");  printf("                                     ¦¦¦;      |\\/| _ ._|  __|_\n");
-		printf("\t\t             '¦¦¦¦¦¦¦¦"); arrowHere(2,position); printf("  Bantuan");  printf("                 ¦¦¦¦      |  |(_|| |<}_ | \n");
-		printf("\t\t               ¯¦¦¦¦¦¦");  printf("                                     ¦¦¦¦¦\n");
-		printf("\t\t               ¯¦¦¦¦¦¦"); arrowHere(3,position); printf("  About");  printf("                   ¦¦¦¦¦¦       |~)| _  _ _\n");
-		printf("\t\t                ¯¦¦¦¦¦                                     ¦¦¦¦¦¦_      |~ |(_|(_}_\n");
-		printf("\t\t                 ¦¦¦¦¦"); arrowHere(4,position); printf("  Keluar"); printf("                  ¦¦¦¦¦¦¦Ç\n");
+		printf("\t\t            Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦"); arrowHere(1,position); printf("  Yuk Belanja!"); printf("            Â¦Â¦C\n");
+		printf("\t\t             Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦");  printf("                                     Â¦Â¦Â¦;      |\\/| _ ._|  __|_\n");
+		printf("\t\t             'Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦"); arrowHere(2,position); printf("  Bantuan");  printf("                 Â¦Â¦Â¦Â¦      |  |(_|| |<}_ | \n");
+		printf("\t\t               Â¯Â¦Â¦Â¦Â¦Â¦Â¦");  printf("                                     Â¦Â¦Â¦Â¦Â¦\n");
+		printf("\t\t               Â¯Â¦Â¦Â¦Â¦Â¦Â¦"); arrowHere(3,position); printf("  About");  printf("                   Â¦Â¦Â¦Â¦Â¦Â¦       |~)| _  _ _\n");
+		printf("\t\t                Â¯Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦_      |~ |(_|(_}_\n");
+		printf("\t\t                 Â¦Â¦Â¦Â¦Â¦"); arrowHere(4,position); printf("  Keluar"); printf("                  Â¦Â¦Â¦Â¦Â¦Â¦Â¦Ã‡\n");
 		
 		logoformenu_bottom();
 		
@@ -359,7 +416,7 @@ void menu(){
 				break;
 				
 			default:
-				return menu();
+				printf("");
 			
 		}
 }
@@ -861,7 +918,7 @@ for(m=0;welcome[m]!='\0';m++){
     printf("%c",welcome[m]);
     for(n=0;n<=4999999;n++){}
 }
-
+exit(0);
 }
 
 
@@ -870,65 +927,65 @@ for(m=0;welcome[m]!='\0';m++){
 void logo(){
 	
 printf("\t\t                                              ,g_\n");Sleep(10);
-printf("\t\t                                           ,__¦¦¦¦¦¦\n");Sleep(10);
-printf("\t\t                                     ,+_¦¦¦¦¦¦¦¦¦¦¦¦¦\n");Sleep(10);
-printf("\t\t                               ,__o       +¯¯¯¯¦¦¦¦¦¦_\n");Sleep(10);
-printf("\t\t                          __¦¦¦¦¯  _¦¦¦¯-     '¦¦¦¦¦¦¦µ\n");Sleep(10);
-printf("\t\t                    +__¦¦¦¦¦¦¦¦- +¦¦¦¯  _¦¦¦¬ +_   ¯¦¦¦µ\n");Sleep(10);
-printf("\t\t              ,__¦¦¦¦¦¦¦¦¦¦¦¦¦o ¬¦¦¦¯ ,¦¦¦¦¦¦¬ +¦¦  ¯¦¦¦\n");Sleep(10);
-printf("\t\t        ,__¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦  ¦¦¦¦  ¦¦¦¦¦¦¦¦  ¦¦¦  ¦¦¦¦\n");Sleep(10);
-printf("\t\t        ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦U  ¦¯¯  +¯¯++++-          ¦¯¦\n");Sleep(10);
-printf("\t\t         ¯¦¦¦¦¦¦¦¦¦¦¦¦\n");Sleep(10);
-printf("\t\t          ¯¦¦¦¦¦¦¦¦¦¦¦                                     ¦      |~\\o(~|o_|_ _ |\n");Sleep(10);
-printf("\t\t           ¦¦¦¦¦¦¦¦¦¦¦                                     ¦_     |_/| _|| | (_||\n");Sleep(10);
-printf("\t\t            ¦¦¦¦¦¦¦¦¦¦                                     ¦¦C\n");Sleep(10);
-printf("\t\t             ¦¦¦¦¦¦¦¦¦                                     ¦¦¦;      |\\/| _ ._|  __|_\n");Sleep(10);
-printf("\t\t             '¦¦¦¦¦¦¦¦                                     ¦¦¦¦      |  |(_|| |<}_ | \n");Sleep(10);
-printf("\t\t              ¦¦¦¦¦¦¦¦                                     ¦¦¦¦¦\n");Sleep(10);
-printf("\t\t               ¯¦¦¦¦¦¦                                     ¦¦¦¦¦¦       |~)| _  _ _\n");Sleep(10);
-printf("\t\t                ¯¦¦¦¦¦                                     ¦¦¦¦¦¦_      |~ |(_|(_}_\n");Sleep(10);
-printf("\t\t                 ¦¦¦¦¦                                     ¦¦¦¦¦¦¦Ç\n");  Sleep(10);
-printf("\t\t                  ¦¦¦¦                                     ¦¦¦¦¦¦¦¦¬        | _|_ _|\n");Sleep(10);
-printf("\t\t                   ¦¦¦                                     ¦¦¦¦¦¦¦¦¦.       |_ | (_|o\n");Sleep(10);
-printf("\t\t                    ¦¦\n");Sleep(10);
-printf("\t\t                     ¦  _¦¯¯¯¯¦¦¦¦  ¯¯¦¦¦¯¯ ¯¯¦¦¦¯¯¯¯¯¦¦¦  ¯¯¦¦¦¯¯    ¯¯¦¦¦¯¯\n");Sleep(10);
-printf("\t\t                       ¦¦      ¯¦¦    ¦¦¦     ¦¦¦      ¯¦    ¦¦¦¦_      ¦¦¦\n");Sleep(10);
-printf("\t\t                       ¯¦¦¦___.       ¦¦¦     ¦¦¦  _¦¦  ¯    ¦¦¦ ¯¦¦_   ¦¦¦\n");Sleep(10);
-printf("\t\t                        '¯¯¦¦¦¦¦¦_    ¦¦¦     ¦¦¦¯¯¯¦¦       ¦¦¦   ¦¦¦_ ¦¦¦\n");Sleep(10);
-printf("\t\t                       ¦_      +¦¦    ¦¦¦     ¦¦¦      ¦¦    ¦¦¦    ¦¦¦¦¦¦¦\n");Sleep(10);
-printf("\t\t                       ¦¦_;    +¦¦    ¦¦¦     ¦¦¦     ¦¦¦    ¦¦¦      ¯¦¦¦¦\n");Sleep(10);
-printf("\t\t                         ¯¯¦¦¦¦¯¯   ¯¯¯¯¯¯¯ ¯¯¦¦¦¯¯¯¯¯¦¦   ¯¯¦¦¦¯¯    ¯¯¦¦¦¯¯\n");Sleep(10);
+printf("\t\t                                           ,__Â¦Â¦Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                                     ,+_Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                               ,__o       +Â¯Â¯Â¯Â¯Â¦Â¦Â¦Â¦Â¦Â¦_\n");Sleep(10);
+printf("\t\t                          __Â¦Â¦Â¦Â¦Â¯  _Â¦Â¦Â¦Â¯-     'Â¦Â¦Â¦Â¦Â¦Â¦Â¦Âµ\n");Sleep(10);
+printf("\t\t                    +__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦- +Â¦Â¦Â¦Â¯  _Â¦Â¦Â¦Â¬ +_   Â¯Â¦Â¦Â¦Âµ\n");Sleep(10);
+printf("\t\t              ,__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦o Â¬Â¦Â¦Â¦Â¯ ,Â¦Â¦Â¦Â¦Â¦Â¦Â¬ +Â¦Â¦  Â¯Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t        ,__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦  Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t        Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦U  Â¦Â¯Â¯  +Â¯Â¯++++-          Â¦Â¯Â¦\n");Sleep(10);
+printf("\t\t         Â¯Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t          Â¯Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦      |~\\o(~|o_|_ _ |\n");Sleep(10);
+printf("\t\t           Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦_     |_/| _|| | (_||\n");Sleep(10);
+printf("\t\t            Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦C\n");Sleep(10);
+printf("\t\t             Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦;      |\\/| _ ._|  __|_\n");Sleep(10);
+printf("\t\t             'Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦      |  |(_|| |<}_ | \n");Sleep(10);
+printf("\t\t              Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t               Â¯Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦       |~)| _  _ _\n");Sleep(10);
+printf("\t\t                Â¯Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦_      |~ |(_|(_}_\n");Sleep(10);
+printf("\t\t                 Â¦Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Ã‡\n");  Sleep(10);
+printf("\t\t                  Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¬        | _|_ _|\n");Sleep(10);
+printf("\t\t                   Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦.       |_ | (_|o\n");Sleep(10);
+printf("\t\t                    Â¦Â¦\n");Sleep(10);
+printf("\t\t                     Â¦  _Â¦Â¯Â¯Â¯Â¯Â¦Â¦Â¦Â¦  Â¯Â¯Â¦Â¦Â¦Â¯Â¯ Â¯Â¯Â¦Â¦Â¦Â¯Â¯Â¯Â¯Â¯Â¦Â¦Â¦  Â¯Â¯Â¦Â¦Â¦Â¯Â¯    Â¯Â¯Â¦Â¦Â¦Â¯Â¯\n");Sleep(10);
+printf("\t\t                       Â¦Â¦      Â¯Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦      Â¯Â¦    Â¦Â¦Â¦Â¦_      Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                       Â¯Â¦Â¦Â¦___.       Â¦Â¦Â¦     Â¦Â¦Â¦  _Â¦Â¦  Â¯    Â¦Â¦Â¦ Â¯Â¦Â¦_   Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                        'Â¯Â¯Â¦Â¦Â¦Â¦Â¦Â¦_    Â¦Â¦Â¦     Â¦Â¦Â¦Â¯Â¯Â¯Â¦Â¦       Â¦Â¦Â¦   Â¦Â¦Â¦_ Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                       Â¦_      +Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦      Â¦Â¦    Â¦Â¦Â¦    Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                       Â¦Â¦_;    +Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦     Â¦Â¦Â¦    Â¦Â¦Â¦      Â¯Â¦Â¦Â¦Â¦\n");Sleep(10);
+printf("\t\t                         Â¯Â¯Â¦Â¦Â¦Â¦Â¯Â¯   Â¯Â¯Â¯Â¯Â¯Â¯Â¯ Â¯Â¯Â¦Â¦Â¦Â¯Â¯Â¯Â¯Â¯Â¦Â¦   Â¯Â¯Â¦Â¦Â¦Â¯Â¯    Â¯Â¯Â¦Â¦Â¦Â¯Â¯\n");Sleep(10);
 
 }
 
 void logoformenu_top(){
 	
 printf("\t\t                                              ,g_\n");
-printf("\t\t                                           ,__¦¦¦¦¦¦\n");
-printf("\t\t                                     ,+_¦¦¦¦¦¦¦¦¦¦¦¦¦\n");
-printf("\t\t                               ,__o       +¯¯¯¯¦¦¦¦¦¦_\n");
-printf("\t\t                          __¦¦¦¦¯  _¦¦¦¯-     '¦¦¦¦¦¦¦µ\n");
-printf("\t\t                    +__¦¦¦¦¦¦¦¦- +¦¦¦¯  _¦¦¦¬ +_   ¯¦¦¦µ\n");
-printf("\t\t              ,__¦¦¦¦¦¦¦¦¦¦¦¦¦o ¬¦¦¦¯ ,¦¦¦¦¦¦¬ +¦¦  ¯¦¦¦\n");
-printf("\t\t        ,__¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦  ¦¦¦¦  ¦¦¦¦¦¦¦¦  ¦¦¦  ¦¦¦¦\n");
-printf("\t\t        ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦U  ¦¯¯  +¯¯++++-          ¦¯¦\n");
-printf("\t\t         ¯¦¦¦¦¦¦¦¦¦¦¦¦\n");
-printf("\t\t          ¯¦¦¦¦¦¦¦¦¦¦¦                                     ¦      |~\\o(~|o_|_ _ |\n");
-printf("\t\t           ¦¦¦¦¦¦¦¦¦¦¦                                     ¦_     |_/| _|| | (_||\n");
+printf("\t\t                                           ,__Â¦Â¦Â¦Â¦Â¦Â¦\n");
+printf("\t\t                                     ,+_Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");
+printf("\t\t                               ,__o       +Â¯Â¯Â¯Â¯Â¦Â¦Â¦Â¦Â¦Â¦_\n");
+printf("\t\t                          __Â¦Â¦Â¦Â¦Â¯  _Â¦Â¦Â¦Â¯-     'Â¦Â¦Â¦Â¦Â¦Â¦Â¦Âµ\n");
+printf("\t\t                    +__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦- +Â¦Â¦Â¦Â¯  _Â¦Â¦Â¦Â¬ +_   Â¯Â¦Â¦Â¦Âµ\n");
+printf("\t\t              ,__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦o Â¬Â¦Â¦Â¦Â¯ ,Â¦Â¦Â¦Â¦Â¦Â¦Â¬ +Â¦Â¦  Â¯Â¦Â¦Â¦\n");
+printf("\t\t        ,__Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦  Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦  Â¦Â¦Â¦  Â¦Â¦Â¦Â¦\n");
+printf("\t\t        Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦U  Â¦Â¯Â¯  +Â¯Â¯++++-          Â¦Â¯Â¦\n");
+printf("\t\t         Â¯Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");
+printf("\t\t          Â¯Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦      |~\\o(~|o_|_ _ |\n");
+printf("\t\t           Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦                                     Â¦_     |_/| _|| | (_||\n");
 }
 
 void logoformenu_bottom(){
 
-printf("\t\t                  ¦¦¦¦                                     ¦¦¦¦¦¦¦¦¬        | _|_ _|\n");
-printf("\t\t                   ¦¦¦                                     ¦¦¦¦¦¦¦¦¦.       |_ | (_|o\n");
-printf("\t\t                    ¦¦\n");
-printf("\t\t                     ¦  _¦¯¯¯¯¦¦¦¦  ¯¯¦¦¦¯¯ ¯¯¦¦¦¯¯¯¯¯¦¦¦  ¯¯¦¦¦¯¯    ¯¯¦¦¦¯¯\n");
-printf("\t\t                       ¦¦      ¯¦¦    ¦¦¦     ¦¦¦      ¯¦    ¦¦¦¦_      ¦¦¦\n");
-printf("\t\t                       ¯¦¦¦___.       ¦¦¦     ¦¦¦  _¦¦  ¯    ¦¦¦ ¯¦¦_   ¦¦¦\n");
-printf("\t\t                        '¯¯¦¦¦¦¦¦_    ¦¦¦     ¦¦¦¯¯¯¦¦       ¦¦¦   ¦¦¦_ ¦¦¦\n");
-printf("\t Developed by AlFa             ¦_      +¦¦    ¦¦¦     ¦¦¦      ¦¦    ¦¦¦    ¦¦¦¦¦¦¦\n");
-printf("\t Alfian & Fahri                ¦¦_;    +¦¦    ¦¦¦     ¦¦¦     ¦¦¦    ¦¦¦      ¯¦¦¦¦\n");
-printf("\t Copyright@2018                  ¯¯¦¦¦¦¯¯   ¯¯¯¯¯¯¯ ¯¯¦¦¦¯¯¯¯¯¦¦   ¯¯¦¦¦¯¯    ¯¯¦¦¦¯¯\n");
+printf("\t\t                  Â¦Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¬        | _|_ _|\n");
+printf("\t\t                   Â¦Â¦Â¦                                     Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦Â¦.       |_ | (_|o\n");
+printf("\t\t                    Â¦Â¦\n");
+printf("\t\t                     Â¦  _Â¦Â¯Â¯Â¯Â¯Â¦Â¦Â¦Â¦  Â¯Â¯Â¦Â¦Â¦Â¯Â¯ Â¯Â¯Â¦Â¦Â¦Â¯Â¯Â¯Â¯Â¯Â¦Â¦Â¦  Â¯Â¯Â¦Â¦Â¦Â¯Â¯    Â¯Â¯Â¦Â¦Â¦Â¯Â¯\n");
+printf("\t\t                       Â¦Â¦      Â¯Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦      Â¯Â¦    Â¦Â¦Â¦Â¦_      Â¦Â¦Â¦\n");
+printf("\t\t                       Â¯Â¦Â¦Â¦___.       Â¦Â¦Â¦     Â¦Â¦Â¦  _Â¦Â¦  Â¯    Â¦Â¦Â¦ Â¯Â¦Â¦_   Â¦Â¦Â¦\n");
+printf("\t\t                        'Â¯Â¯Â¦Â¦Â¦Â¦Â¦Â¦_    Â¦Â¦Â¦     Â¦Â¦Â¦Â¯Â¯Â¯Â¦Â¦       Â¦Â¦Â¦   Â¦Â¦Â¦_ Â¦Â¦Â¦\n");
+printf("\t Developed by AlFa             Â¦_      +Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦      Â¦Â¦    Â¦Â¦Â¦    Â¦Â¦Â¦Â¦Â¦Â¦Â¦\n");
+printf("\t Alfian & Fahri                Â¦Â¦_;    +Â¦Â¦    Â¦Â¦Â¦     Â¦Â¦Â¦     Â¦Â¦Â¦    Â¦Â¦Â¦      Â¯Â¦Â¦Â¦Â¦\n");
+printf("\t Copyright@2018                  Â¯Â¯Â¦Â¦Â¦Â¦Â¯Â¯   Â¯Â¯Â¯Â¯Â¯Â¯Â¯ Â¯Â¯Â¦Â¦Â¦Â¯Â¯Â¯Â¯Â¯Â¦Â¦   Â¯Â¯Â¦Â¦Â¦Â¯Â¯    Â¯Â¯Â¦Â¦Â¦Â¯Â¯\n");
 }
 
 // Linked List
