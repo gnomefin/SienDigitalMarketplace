@@ -1,4 +1,4 @@
-# SienDigitalMarketplace
+# Sien Digital Marketplace, Ltd.
 
 SIEN Digital Marketplace, Ltd. adalah sebuah prototype dari sebuah platform layanan perbelanjaan digital, dimana kami ingin membuat kepercayaan dalam berbelanja seperti layaknya di Supermarket dengan konsep yang cepat, fleksibel dan efisien sehingga tidak memakan waktu berharga Anda. 
 
