@@ -1,6 +1,6 @@
 # Sien Digital Marketplace, Ltd.
 
-![DigitalMarketplace](SienDigitalMarketplace/Logo_DigitalMarketplace.png)
+![DigitalMarketplace](https://raw.githubusercontent.com/bloodberrys/SienDigitalMarketplace/master/Logo_DigitalMarketplace.png)
 
 SIEN Digital Marketplace, Ltd. adalah sebuah prototype dari sebuah platform layanan perbelanjaan digital, dimana kami ingin membuat kepercayaan dalam berbelanja seperti layaknya di Supermarket dengan konsep yang cepat, fleksibel dan efisien sehingga tidak memakan waktu berharga Anda. 
 
