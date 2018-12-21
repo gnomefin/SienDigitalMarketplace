@@ -3,6 +3,7 @@
 <p align="center"><img src="https://raw.githubusercontent.com/bloodberrys/SienDigitalMarketplace/master/Logo_DigitalMarketplace.png"></p>
 
 * [Description](#description)
+* [Contact Person](#contact)
 
 
 ## Description
@@ -12,6 +13,7 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 
 For more further information, questions or any concerns please do contact us:
 
+## contact
 alfian.firmansyah@ui.ac.id / 083870975096
 
 fahrialamsyah231@gmail.com / 081316259144
