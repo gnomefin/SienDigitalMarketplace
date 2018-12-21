@@ -2,8 +2,8 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/bloodberrys/SienDigitalMarketplace/master/Logo_DigitalMarketplace.png"></p>
 
-* [Description](#description)
-* [Contact Person](#contact)
+1 [Description](#description)
+2 [Contact Person](#contact)
 
 
 ## Description
