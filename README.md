@@ -13,7 +13,7 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 
 For more further information, questions or any concerns please do contact us:
 
-## Contact Person
+## Contact
 alfian.firmansyah@ui.ac.id / 083870975096
 
 fahrialamsyah231@gmail.com / 081316259144
