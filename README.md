@@ -88,11 +88,11 @@ void arrowHere(int realPosition, int arrowPosition){
 }		
 ```
 Berhubung program ini merupakan program prototype dari sebuah platform, kami menggunakan ASCII Art untuk tampilan program yang didapatkan dari beberapa sumber:
-[https://asciiart.eu/electronics](https://asciiart.eu/electronics)
-[http://www.asciiworld.com/](http://www.asciiworld.com/)
-[https://manytools.org/hacker-tools/convert-images-to-ascii-art/](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
-[https://www.ascii-art-generator.org/](https://www.ascii-art-generator.org/)
-[http://asciiflow.com/](http://asciiflow.com/)
+- [https://asciiart.eu/electronics](https://asciiart.eu/electronics)
+- [http://www.asciiworld.com/](http://www.asciiworld.com/)
+- [https://manytools.org/hacker-tools/convert-images-to-ascii-art/](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
+- [https://www.ascii-art-generator.org/](https://www.ascii-art-generator.org/)
+- [http://asciiflow.com/](http://asciiflow.com/)
 
 
 
