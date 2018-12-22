@@ -77,7 +77,7 @@ Berhubung program ini merupakan program prototype dari sebuah platform, kami men
 
 ---
 
-Menu:
+**Menu:**
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/menu.png"></p>
 
 Pada program belanja, semua menggunakan fungsi *arrow.h* sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
@@ -105,23 +105,23 @@ void arrowHere(int realPosition, int arrowPosition){
 }		
 ```
 
-Menu Katalog, dimana user diminta untuk memilih item dengan katalog yang tersedia (fungsi arrow masih digunakan pada state ini):
+**Menu Katalog**, dimana user diminta untuk memilih item dengan katalog yang tersedia (fungsi arrow masih digunakan pada state ini):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/katalog.PNG"></p>
 
-Items:
+**Items:**
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/item.png"></p>
 
 
-Lalu menu Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE` dan untuk menghapus kart `CTRL + D`):
+Lalu menu **Kart**, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE` dan untuk menghapus kart `CTRL + D`):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/kart.PNG"></p>
 
-Pembelian jika user menekan `CTRL + B`:
+**Pembelian** jika user menekan `CTRL + B`:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/checkout.PNG"></p>
 
-Lalu User akan diminta untuk mengisi form singkat, yaitu nama dan alamat:
+Lalu User akan diminta untuk mengisi **form** singkat, yaitu nama dan alamat:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/form_database.PNG"></p>
 
-Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah database csv (Comma Separated Values Microsoft Excel):
+Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah **database -.csv** (*Comma Separated Values Microsoft Excel*):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database.PNG"></p>
 
 Lainnya: 
