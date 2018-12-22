@@ -8,30 +8,32 @@
 	+ [Flowchart](#flowchart)
 	+ [User Usage Documentation](#user-usage-documentation)
 	+ [Admin Usage Documentation](#admin-usage-documentation)
-* [Contact Person](#contact)
+* [Contact Person](#contact-person)
 
 ## Description
-SIEN Digital Marketplace, Ltd. adalah sebuah prototype dari sebuah platform layanan perbelanjaan digital, dimana kami ingin membuat kepercayaan dalam berbelanja seperti layaknya di Supermarket dengan konsep yang cepat, fleksibel dan efisien sehingga tidak memakan waktu berharga Anda. 
+**SIEN Digital Marketplace, Ltd.** adalah sebuah prototype dari sebuah platform layanan perbelanjaan digital, dimana kami ingin membuat kepercayaan dalam berbelanja seperti layaknya di Supermarket dengan konsep yang cepat, fleksibel dan efisien sehingga tidak memakan waktu berharga Anda. 
 
 Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke supermarket favorit Anda yang sudah tersedia layanan SIEN digital. Cocok bagi Anda yang seorang mahasiswa atau seorang jomblo, SIEN Digital Marketplace adalah aplikasi idaman Anda.
 
 ## Installation
-1. Download atau clone repository ke desktop Anda
+1. **Download** atau **clone** repository ke desktop Anda
 2. Ekstrak dalam satu folder dan pastikan bahwa semua source code diletakkan di dalam satu branch.
 3. Jalankan dengan membuka `main.c` dengan menggunakan IDE C/C++ language
 4. `Compile dan Run` 
 
 
 ## How Does It Works
+---
 ### Flowchart
-Flowchart Program Belanja:
+**Flowchart Program Belanja:**
 <p align="center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/flowchart.png"></p>
 
-Flowchart Menu untuk Admin:
+**Flowchart Menu untuk Admin:**
 <p align = "center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
-															      
+---															      
 ### User Usage Documentation
-Fullscreen Prompt:
+---
+**Fullscreen Prompt:**
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
 Source Program `fullscreen` untuk membuat program yang dijalankan terlihat fullscreen, namun scrollbar masih muncul di sisi kanan, untuk itu dibutuhkan fungsi `hide_scrollbar` untuk menghapusnya:
@@ -74,7 +76,7 @@ Berhubung program ini merupakan program prototype dari sebuah platform, kami men
 Menu:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/menu.png"></p>
 
-Pada program belanja, semua menggunakan fungsi `arrow` sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
+Pada program belanja, semua menggunakan fungsi *arrow.h* sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
 
 ```c
 void arrowKatalog(int realPosition, int arrowPosition){
@@ -118,14 +120,18 @@ Lalu User akan diminta untuk mengisi form singkat, yaitu nama dan alamat:
 Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah database csv (Comma Separated Values Microsoft Excel):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database.PNG"></p>
 
-Lainnya:
+Lainnya: 
+```c
+printf("still under construction"); //hehehe
+```
 
-
+---
 ### Admin Usage Documentation
+---
+---
 
 
-
-## Contact
+## Contact Person
 For more further information, questions or any concerns please do contact us:
 
 alfian.firmansyah@ui.ac.id / 083870975096
