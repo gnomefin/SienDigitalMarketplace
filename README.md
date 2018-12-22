@@ -31,7 +31,7 @@ Fullscreen Prompt:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
 Source Program `fullscreen` untuk membuat program yang dijalankan terlihat fullscreen, namun scrollbar masih muncul di sisi kanan, untuk itu dibutuhkan fungsi `hide_scrollbar` untuk menghapusnya:
-```
+```c
 void fullscreen()
 {
 	keybd_event(VK_MENU,0x38,0,0);
