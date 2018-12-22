@@ -60,9 +60,15 @@ void hide_scrollbar()
 	
 }
 ```
+Berhubung program ini merupakan program prototype dari sebuah platform, kami menggunakan ASCII Art untuk tampilan program yang didapatkan dari beberapa sumber:
+- [https://asciiart.eu/electronics](https://asciiart.eu/electronics)
+- [http://www.asciiworld.com/](http://www.asciiworld.com/)
+- [https://manytools.org/hacker-tools/convert-images-to-ascii-art/](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
+- [https://www.ascii-art-generator.org/](https://www.ascii-art-generator.org/)
+- [http://asciiflow.com/](http://asciiflow.com/)
 
 Menu:
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/yuk_belanja.png"></p>
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/menu.png"></p>
 Pada program belanja, semua menggunakan fungsi `arrow.h` sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
 
 ```c
@@ -87,12 +93,14 @@ void arrowHere(int realPosition, int arrowPosition){
 	}
 }		
 ```
-Berhubung program ini merupakan program prototype dari sebuah platform, kami menggunakan ASCII Art untuk tampilan program yang didapatkan dari beberapa sumber:
-- [https://asciiart.eu/electronics](https://asciiart.eu/electronics)
-- [http://www.asciiworld.com/](http://www.asciiworld.com/)
-- [https://manytools.org/hacker-tools/convert-images-to-ascii-art/](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
-- [https://www.ascii-art-generator.org/](https://www.ascii-art-generator.org/)
-- [http://asciiflow.com/](http://asciiflow.com/)
+Menu Katalog, dimana user diminta untuk memilih item dengan katalog yang tersedia (fungsi arrow masih digunakan pada state ini):
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/katalog.PNG"></p>
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/item.png"></p>
+
+Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga:
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/kart.PNG"></p>
+
+
 
 
 
