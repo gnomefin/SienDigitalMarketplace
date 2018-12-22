@@ -23,16 +23,16 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 
 
 ## How Does It Works
----
+
 ### Flowchart
 **Flowchart Program Belanja:**
 <p align="center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/flowchart.png"></p>
 
 **Flowchart Menu untuk Admin:**
 <p align = "center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
----															      
+															      
 ### User Usage Documentation
----
+
 **Fullscreen Prompt:**
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
@@ -66,12 +66,16 @@ void hide_scrollbar()
 	
 }
 ```
+---
+
 Berhubung program ini merupakan program prototype dari sebuah platform, kami menggunakan ASCII Art untuk tampilan program yang didapatkan dari beberapa sumber:
 - [https://asciiart.eu/electronics](https://asciiart.eu/electronics)
 - [http://www.asciiworld.com/](http://www.asciiworld.com/)
 - [https://manytools.org/hacker-tools/convert-images-to-ascii-art/](https://manytools.org/hacker-tools/convert-images-to-ascii-art/)
 - [https://www.ascii-art-generator.org/](https://www.ascii-art-generator.org/)
 - [http://asciiflow.com/](http://asciiflow.com/)
+
+---
 
 Menu:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/menu.png"></p>
@@ -125,10 +129,8 @@ Lainnya:
 printf("still under construction"); //hehehe
 ```
 
----
+
 ### Admin Usage Documentation
----
----
 
 
 ## Contact Person
