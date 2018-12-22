@@ -20,10 +20,17 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 
 
 ## Documentation
+Flowchart Program Belanja:
+<p align="center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/flowchart.png"></p>
+
+Flowchart Menu untuk Admin:
+<p align = "center><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
+															      
+
 Fullscreen Prompt:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
-Source Program `Fullscreen` dan `Scrollbar Hider` sehingga tampilan fullscreen lebih maksimal:
+Source Program `fullscreen` untuk membuat program yang dijalankan terlihat fullscreen, namun scrollbar masih muncul di sisi kanan, untuk itu dibutuhkan fungsi `hide_scrollbar` untuk menghapusnya:
 ```
 void fullscreen()
 {
