@@ -124,6 +124,55 @@ Lalu User akan diminta untuk mengisi **form** singkat, yaitu nama dan alamat:
 Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah **database -.csv** (*Comma Separated Values Microsoft Excel*):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database.PNG"></p>
 
+Dengan source code :
+```c
+void createfile(int no_invoice, char *nama, char *address, int total){
+	//time
+	time_t t = time(NULL);				//mencatat waktu
+	struct tm tm = *localtime(&t);
+	
+	char *filename;
+		printf("\n  Creating database file");
+			FILE *fp;
+				filename="database.csv";
+	
+	fp=fopen(filename,"a+");
+		fprintf(fp,"\n%d/%d/%d, %d:%d:%d, %d, %s, %s, %d, Item, Harga\n",
+		tm.tm_year - 100, tm.tm_mon + 1, 
+		tm.tm_mday, 
+		tm.tm_hour, 
+		tm.tm_min, 
+		tm.tm_sec,
+		no_invoice,nama,address,total
+		);
+	
+	tampil  = head;
+
+	while(tampil!=NULL){
+		fprintf(fp,",,,,,, %s, %d\n",tampil->nama,tampil->harga);
+		tampil = tampil->next;
+	} 
+	 
+	fclose(fp);
+	printf("\n  %sfile created",filename);
+	getch();
+	
+	//reset all node setelah melakukan transaksi, atau untuk mengosongkan kart
+	tampil=head;
+	
+	while (head!=NULL){
+	
+		tampil = head;
+		head = head->next;
+		free(tampil);
+	}
+
+	sum = 0;
+	a = 0;
+	return menu();
+}
+```
+
 Lainnya: 
 ```c
 printf("still under construction"); //hehehe
