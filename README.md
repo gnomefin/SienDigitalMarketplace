@@ -4,7 +4,10 @@
 
 * [Description](#description)
 * [Installation](#installation)
-* [How Does It Works](#documentation)
+* [How Does It Works](#how-does-it-works)
+	+ [Flowchart](#flowchart)
+	+ [Flowchart](#flowchart)
+	+ [Flowchart](#flowchart)
 * [Contact Person](#contact)
 
 ## Description
@@ -19,7 +22,8 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 4. `Compile dan Run` 
 
 
-## Documentation
+## How Does It Works
+### Flowchart
 Flowchart Program Belanja:
 <p align="center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/flowchart.png"></p>
 
@@ -69,6 +73,7 @@ Berhubung program ini merupakan program prototype dari sebuah platform, kami men
 
 Menu:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/menu.png"></p>
+
 Pada program belanja, semua menggunakan fungsi `arrow` sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
 
 ```c
@@ -101,7 +106,7 @@ items:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/item.png"></p>
 
 
-Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE`):
+Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE` dan untuk menghapus kart `CTRL + D`):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/kart.PNG"></p>
 
 Pembelian jika user menekan `CTRL + B`:
