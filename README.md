@@ -124,7 +124,9 @@ Lalu User akan diminta untuk mengisi **form** singkat, yaitu nama dan alamat:
 Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah **database -.csv** (*Comma Separated Values Microsoft Excel*):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database.PNG"></p>
 
-Dengan source code :
+*Note: Database csv dapat dibuka pada branch yang sama dengan file `main.c`, yaitu dengan nama `database.csv`.
+
+Source code untuk database :
 ```c
 void createfile(int no_invoice, char *nama, char *address, int total){
 	//time
