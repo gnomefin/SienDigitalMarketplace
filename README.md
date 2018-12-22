@@ -23,6 +23,7 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 Fullscreen Prompt:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
+Source Program `Fullscreen` dan `Scrollbar Hider` sehingga tampilan fullscreen lebih maksimal:
 ```
 void fullscreen()
 {
@@ -34,7 +35,7 @@ void fullscreen()
 
 void hide_scrollbar()
 {
-     SetConsoleDisplayMode(GetStdHandle(STD_OUTPUT_HANDLE), CONSOLE_FULLSCREEN_MODE, 0);
+    SetConsoleDisplayMode(GetStdHandle(STD_OUTPUT_HANDLE), CONSOLE_FULLSCREEN_MODE, 0);
 
     HANDLE hstdout = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
