@@ -61,6 +61,41 @@ void hide_scrollbar()
 }
 ```
 
+Menu:
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/yuk_belanja.png"></p>
+Pada program belanja, semua menggunakan fungsi `arrow.h` sehingga input pilihan yang dilakukan hanya menggunakan tombol arrow pada keyboard user (kiri, kanan, atas, dan bawah).
+```c
+	
+void arrowKatalog(int realPosition, int arrowPosition){
+
+	if(realPosition == arrowPosition){
+		printf("[%lc]",(wint_t)251); //251 adalah simbol checklist, wint adalah fungsi dalam `wchar.h`
+	}
+	else{
+		printf("[ ]");
+	}
+}	
+	
+	
+void arrowHere(int realPosition, int arrowPosition){
+
+	if(realPosition == arrowPosition){
+		printf("        -> ");
+	}
+	else{
+		printf("           ");
+	}
+}	
+	
+```
+Berhubung program ini merupakan program prototype dari sebuah platform, kami menggunakan ASCII Art untuk tampilan program yang didapatkan dari beberapa sumber:
+`
+https://asciiart.eu/electronics
+http://www.asciiworld.com/
+https://manytools.org/hacker-tools/convert-images-to-ascii-art/
+https://www.ascii-art-generator.org/
+http://asciiflow.com/
+'
 
 
 ## Contact
