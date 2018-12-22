@@ -24,7 +24,7 @@ Flowchart Program Belanja:
 <p align="center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/flowchart.png"></p>
 
 Flowchart Menu untuk Admin:
-<p align = "center><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
+<p align = "center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
 															      
 
 Fullscreen Prompt:
