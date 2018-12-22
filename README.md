@@ -6,8 +6,8 @@
 * [Installation](#installation)
 * [How Does It Works](#how-does-it-works)
 	+ [Flowchart](#flowchart)
-	+ [Flowchart](#flowchart)
-	+ [Flowchart](#flowchart)
+	+ [User Usage Documentation](#user-usage-documentation)
+	+ [Admin Usage Documentation](#admin-usage-documentation)
 * [Contact Person](#contact)
 
 ## Description
@@ -18,7 +18,7 @@ Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke super
 ## Installation
 1. Download atau clone repository ke desktop Anda
 2. Ekstrak dalam satu folder dan pastikan bahwa semua source code diletakkan di dalam satu branch.
-3. Jalankan dengan membuka `main.c`dengan menggunakan IDE C/C++ language
+3. Jalankan dengan membuka `main.c` dengan menggunakan IDE C/C++ language
 4. `Compile dan Run` 
 
 
@@ -30,7 +30,7 @@ Flowchart Program Belanja:
 Flowchart Menu untuk Admin:
 <p align = "center"><img src = "https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/admin_mode.png"></p>
 															      
-
+### User Usage Documentation
 Fullscreen Prompt:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Fullscreen.PNG"></p>
 
@@ -102,11 +102,11 @@ void arrowHere(int realPosition, int arrowPosition){
 Menu Katalog, dimana user diminta untuk memilih item dengan katalog yang tersedia (fungsi arrow masih digunakan pada state ini):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/katalog.PNG"></p>
 
-items:
+Items:
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/item.png"></p>
 
 
-Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE` dan untuk menghapus kart `CTRL + D`):
+Lalu menu Kart, dimana item disimpan dalam keranjang belanjaan beserta dengan rincian dan total harga (Hotkey fleksibilitas bisa dilakukan di state manapun dengan menekan tombol `SPACE` dan untuk menghapus kart `CTRL + D`):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/kart.PNG"></p>
 
 Pembelian jika user menekan `CTRL + B`:
@@ -118,6 +118,10 @@ Lalu User akan diminta untuk mengisi form singkat, yaitu nama dan alamat:
 Dari proses yang sudah dijalankan, semua data akan direcord untuk diletakkan di sebuah database csv (Comma Separated Values Microsoft Excel):
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database.PNG"></p>
 
+Lainnya:
+
+
+### Admin Usage Documentation
 
 
 
