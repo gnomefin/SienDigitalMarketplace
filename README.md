@@ -182,7 +182,7 @@ printf("still under construction"); //hehehe
 
 
 ### Admin Usage Documentation
-Untuk menggunakan menu admin (CTRL + SHIFT + 2) dan juga anda harus mengetahui password admin dari aplikasi yang kami sediakan dimana jika password tersebut salah maka akan ada warning mengenai hal tersebut, namun bila password benar maka program akan menuju menu inventaris. 
+Untuk menggunakan menu admin `CTRL + SHIFT + 2` dan juga anda harus mengetahui password admin dari aplikasi yang kami sediakan dimana jika password tersebut salah maka akan ada warning mengenai hal tersebut, namun bila password benar maka program akan menuju menu inventaris. 
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%202.PNG"></p>
 
