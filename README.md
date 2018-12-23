@@ -515,11 +515,63 @@ void delete_node()
     }
 }
  ```
-
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2010.PNG"></p>
+
+Source Code ketika tiap kita `Input Barang` , `Delete Barang` , `Sorting Barang` , dan `Search Barang` lalu `Print Barang` : 
+ ```c
+void print_the_list()
+{
+    printf("\n");
+    printf("Data Inventaris Anda Sekarang : \n");
+    Node* temp=atas;
+    printf("\n");
+    while(temp!=NULL)
+    {
+        printf("%25s",temp->name);
+        printf("%25d",temp->price);
+        temp=temp->next;
+        printf("\n");
+    }
+}
+ ```
+Di bagian akhir ketika data terakhir sudah terprint kami menyimpannya di excel dalam bentuk  `csv` :
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2011.PNG"></p>
 
+Source Code untuk bagian ini adalah : 
+ ```c
+ void database_inventaris(){
+	
+	time_t t = time(NULL);
+	struct tm tm = *localtime(&t);
+	char *namafile;
+	printf("\n  Creating database inventaris.");
+	FILE *file;
+	
+	namafile = "inventaris.csv";
+	
+	file = fopen(namafile,"a+");
+	fprintf(file,"%d/%d/%d, %d:%d:%d, item, harga\n",
+	tm.tm_year - 100, 
+	tm.tm_mon + 1, 
+	tm.tm_mday, 
+	tm.tm_hour, 
+	tm.tm_min, 
+	tm.tm_sec
+	);
+	temp = atas;
+	while(temp!=NULL){
+		fprintf(file,",, %s, %d\n",temp->name,temp->price);
+		temp = temp->next;
+	} 
+	 
+	fclose(file);
+	 
+	printf("\n  %sfile created",namafile);
+	Sleep(1000);
+	
+}
+ ```
 
 ## Contact Person
 For more further information, questions or any concerns please do contact us:
