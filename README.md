@@ -15,7 +15,7 @@
 
 Anda bisa menggunakan aplikasi yang kami sediakan, atau datang langsung ke supermarket favorit Anda yang sudah tersedia layanan SIEN digital. Cocok bagi Anda yang seorang mahasiswa atau seorang jomblo, SIEN Digital Marketplace adalah aplikasi idaman Anda.
 
-Kami membuat fitur ini murni berasal dari inspirasi diri dan pengaplikasian modul-modul pembelajaran perkuliahan Pemrograman Lanjut dimana kami berdiskusi melalui beberapa referensi seperti melalui amazon dan juga buku buku terkait pemrograman sehingga terciptalah ide ini dan juga relevansi implementasi program ini sangat berguna layaknya pada kehidupan sehari hari. 
+Kami membuat fitur ini murni berasal dari inspirasi diri dan pengaplikasian pembelajaran perkuliahan Pemrograman Lanjut 02 dimana kami berdiskusi melalui beberapa referensi seperti melalui amazon dan juga buku buku terkait pemrograman sehingga terciptalah ide ini dan juga relevansi implementasi program ini sangat berguna layaknya pada kehidupan sehari hari. 
 ## Installation
 1. **Download** atau **clone** repository ke desktop Anda
 2. Ekstrak dalam satu folder dan pastikan bahwa semua source code diletakkan di dalam satu branch.
