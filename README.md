@@ -186,6 +186,54 @@ Untuk menggunakan menu admin `CTRL + SHIFT + 2` dan juga anda harus mengetahui p
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%202.PNG"></p>
 
+Source Untuk Login dan Back dengan menggunakan Arrow : 
+```c
+ void prompt_admin(){
+ 	char i;
+ 	int tekan = 0;
+ 	int posisi = 1;
+ 	while (tekan != 13){
+ system("cls");
+ gotoxy(51,10);
+ printf("AI: Hello, Admin.");
+ gotoxy(43,12);
+ arrowHere(1,posisi);printf("[1] Login");
+ gotoxy(43,14);
+ arrowHere(2,posisi);printf("[2] Back");
+tekan = getch();
+
+if(tekan == 80 && posisi!=2){
+	posisi++;
+	
+}
+else if (tekan == 72 && posisi !=1){
+	posisi--;
+}
+else if(tekan == 27){
+	logo();
+	return menu();
+}
+else{
+	posisi = posisi;
+}
+
+}
+switch(posisi){
+	case 1:
+		//halaman admin
+		login();
+		break;
+	case 2:
+		logo();
+		return menu();
+		break;
+	default:
+		printf("");
+}
+ 
+ }
+ ```
+
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%204.PNG"></p>
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%203.PNG"></p>
