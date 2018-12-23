@@ -406,7 +406,115 @@ Kemudian didalam menu inventaris tersebut kita dapat menambahkan barang , mengha
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/bantuan%2013.PNG"></p>
 
-Source Code Untuk 'Input Barang' , 'Delete Barang' , 'Sorting Barang' , dan 'Search Barang' :
+Source Code Untuk `Input Barang` , `Delete Barang` , `Sorting Barang` , dan `Search Barang` lalu `Print Barang`  :
+```c
+void insert(char* name, int price){
+    Node* new_node = (Node* ) malloc(sizeof(Node));
+    new_node->price = price;
+    new_node->name   = name;
+    new_node->next   = NULL;
+
+    if (atas == NULL) {
+        atas = new_node;
+    }
+    else {
+        Node * temp = atas;
+        while (temp->next != NULL)
+            temp = temp->next;
+        temp->next = new_node;
+    }
+}
+
+void print_the_list()
+{
+    printf("\n");
+    printf("Data Inventaris Anda Sekarang : \n");
+    Node* temp=atas;
+    printf("\n");
+    while(temp!=NULL)
+    {
+        printf("%25s",temp->name);
+        printf("%25d",temp->price);
+        temp=temp->next;
+        printf("\n");
+    }
+}
+
+void sort(){
+    char *swap_ptr_name=NULL;
+    int swap_ptr_price=NULL;
+    Node* current_minimum=NULL;
+    Node* current_node=NULL;
+    for (current_minimum = atas; current_minimum != NULL; current_minimum = current_minimum->next) {
+        for (current_node = current_minimum->next; current_node != NULL;  current_node = current_node->next) {
+            if (strcmp(current_node->name,current_minimum->name) < 0) {
+                swap_ptr_name   = current_minimum->name;
+                swap_ptr_price = current_minimum->price;
+
+                current_minimum->name   = current_node->name;
+                current_minimum->price = current_node->price;
+
+                current_node->name   = swap_ptr_name;
+                current_node->price = swap_ptr_price;
+            }
+        }
+    }
+}
+
+void search()
+{
+    char *keyword=NULL;
+    Node* current=atas;
+    printf("Masukan Barang Untuk Mengecek Harga : ");
+    fflush(stdin);
+    keyword=(char*) malloc(MAX_STRING_LENGTH*sizeof(char));
+    gets(keyword);
+    for (current=atas;current!=NULL;current=current->next)
+    {
+        if (strcmp(current->name,keyword)==0) {
+            puts(current->name);
+            printf("%d",current->price);
+        }
+    }
+}
+
+
+
+void delete_node()
+{
+    char *keyword=NULL;
+    char d=NULL;
+    Node* current=atas;
+    Node* temp=NULL;
+    printf("Masukan Item Yang Akan Di Hapus : ");
+    fflush(stdin);
+    keyword=(char*) malloc(MAX_STRING_LENGTH*sizeof(char));
+    gets(keyword);
+    for (current=atas;current!=NULL;current=current->next)
+    {
+        if (strcmp(current->name,keyword)==0) {
+            puts(current->name);
+            printf("%d\n",current->price);
+            printf("Apakah Kamu Yakin Ingin Menghapus Item Tersebut ? [y/n]: ");
+            fflush(stdin);
+            scanf("%c",&d);
+            if (d=='y' || d=='Y') {
+                if (current==atas)
+                {
+                    atas=current->next;
+                    free(current);
+                }
+                else
+                {
+                    temp->next=current->next;
+                    free(current);
+                }
+            }
+        }
+        temp=current;
+    }
+}
+ ```
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2010.PNG"></p>
 
