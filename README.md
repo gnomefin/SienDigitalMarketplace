@@ -235,7 +235,7 @@ switch(posisi){
  }
  ```
  
-Selain itu juga kami menampilkan fitur keamanan dalam menu admin kami dan berikut kami akan menampilkan source code dan outputnya :
+Selain itu kami juga menampilkan fitur keamanan dalam menu admin kami dan berikut kami akan menampilkan source code dan outputnya :
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2014.PNG"></p>
 
