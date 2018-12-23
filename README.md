@@ -186,19 +186,13 @@ Untuk menggunakan menu admin (CTRL + SHIFT + 2) dan juga anda harus mengetahui p
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%202.PNG"></p>
 
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%203.PNG"></p>
-
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%204.PNG"></p>
+
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%203.PNG"></p>
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%205.PNG"></p>
 
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%206.PNG"></p>
-
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%207.PNG"></p>
-
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%208.PNG"></p>
-
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%209.PNG"></p>
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/bantuan%2013.PNG"></p>
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2010.PNG"></p>
 
