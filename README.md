@@ -299,8 +299,109 @@ void login(){
 	
 }
  ```
+ 
+ Berikut adalah tampilan menu inventaris untuk awalan program : 
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%205.PNG"></p>
+
+Source code sebagai berikut :
+```c
+void admin_mode() {
+	system("cls");
+    atas = NULL;
+    char *product_name=NULL;
+    int product_price=NULL;
+    int n=NULL,i=NULL;
+    char pilih;
+	do{
+		system("cls");
+		printf("\n");
+		printf("\t\t\t======================================================\n");
+		printf("\t\t\t            INVENTARIS SUPERMARKET\n");
+		printf("\t\t\t======================================================\n");
+		printf("\n\n Menu :");
+		printf("\n1  Input Barang.");
+		printf("\n2  Delete Barang");
+		printf("\n3  Urutkan Barang");
+		printf("\n4  Cari Barang");
+		printf("\n5  Tampilkan Data Inventaris Keseluruhan");
+		printf("\n6  Exit");
+		printf("\n Masukan Pilihan Anda : ");
+		scanf(" %c",&pilih);
+	    	switch(pilih){
+		case '1' :
+	    	system("cls");
+			printf("Berapa banyak barang yang anda ingin masukan ke inventaris : ");
+	    	scanf("%d", &n); 
+	    	printf("\n");
+   		 for (i = 1; i <= n; i++){
+        fflush(stdin);
+        printf("Item %d nama: ",i);
+        fflush(stdin);
+        product_name = (char*) malloc(MAX_STRING_LENGTH*sizeof(char));
+        gets(product_name); 
+        printf("Harga: ");
+        scanf("%d",&product_price);
+        insert(product_name, product_price);
+        }
+	     char d=NULL;
+	     print_the_list();
+	       system("pause");
+		 break;
+		 
+		 	case '2' :
+		 		system("cls");
+		 		 print_the_list();
+			     delete_node();
+			     print_the_list();
+			     system("pause");
+				 break;
+			
+			case '3' :
+				system("cls");
+				print_the_list();
+				printf("Apakah kamu mau mengurutkan List Inventaris?(y/n): ");
+    			fflush(stdin);
+   				scanf("%c", &d);
+    			if (d == 'y' || d == 'Y') {
+     		    printf("Urutkan Sekarang !");
+       			sort();
+    		} else
+      			  printf("Baiklah!");
+      			  print_the_list();
+      			    system("pause");
+      			  break;
+      			  
+      		case '4' :
+      			 system("cls");
+      			 print_the_list();
+      			 search();
+      			 print_the_list();
+      			   system("pause");
+      			 break;
+      			 
+      		case '5' :
+      			 system("cls");
+      		     print_the_list();
+      		       system("pause");
+      			 break;
+      			 
+      		case '6' :
+      			database_inventaris();
+      			logo();
+      			return menu();
+      			break;
+      			 
+      		default :
+      			printf("\n Input Salah.Pilih Kembali.\n");
+      			
+			 	
+	}
+	
+}while(pilih!='6');
+
+}
+ ```
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/bantuan%2013.PNG"></p>
 
