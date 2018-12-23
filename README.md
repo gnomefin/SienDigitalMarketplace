@@ -402,8 +402,11 @@ void admin_mode() {
 
 }
  ```
+Kemudian didalam menu inventaris tersebut kita dapat menambahkan barang , menghapus barang , mengurutkan barang , dan mencari barang yang kita ingin sesuai keyword yang kita masukan. Berikut adalah tampilan outputnya : 
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/bantuan%2013.PNG"></p>
+
+Source Code Untuk 'Input Barang' , 'Delete Barang' , 'Sorting Barang' , dan 'Search Barang' :
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2010.PNG"></p>
 
