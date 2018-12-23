@@ -233,10 +233,72 @@ switch(posisi){
  
  }
  ```
+ 
+Selain itu juga kami menampilkan fitur keamanan dalam menu admin kami dan berikut kami akan menampilkan source code dan outputnya :
 
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%204.PNG"></p>
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2014.PNG"></p>
 
-<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%203.PNG"></p>
+Source code Password : 
+```c
+void login(){
+	system("cls");
+	gotoxy(45,14);
+	printf("PASSCODE :",maxPasswordLength);
+	
+	while(1){
+		ch = getch();
+		if( ch == 13 ){
+			break;
+		}else if( ch == 8 ){
+			if( characterPosition > 0){
+				characterPosition--;
+				password[characterPosition] = '\0';
+				printf("\b \b");
+			}
+		}else if( ch == 32 || ch == 9){
+			continue;
+		}else{
+			if( characterPosition < maxPasswordLength ){
+				password[characterPosition] = ch;
+				characterPosition++;
+				printf(" *");
+			}else{
+				printf("\n Your Input Exceeds Maksimum Password length of %d. So only First %d characters will be considered",maxPasswordLength,maxPasswordLength);
+				break;
+			}
+		}
+	}
+	password[characterPosition]= '\0';
+	printf("\n");
+	if( strlen(password) ==0){
+		printf("No Password Entered");
+	}else{
+		if(strcmp(password,loginpassword)==0){
+			gotoxy(45,16);
+			Green();
+			printf("Login Success");
+			reset();
+			Sleep(1000);
+			admin_mode();
+		}else{
+			gotoxy(45,16);
+			red();
+			printf("Login Failure");
+			reset();
+			//reset
+			int o = 0;
+			for(o = 0;o<15;o++){
+				password[o] = 0;
+			}
+			ch = 0;
+			characterPosition = 0;
+			Sleep(1000);
+			return prompt_admin();
+		}
+	}
+	
+}
+ ```
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%205.PNG"></p>
 
