@@ -279,6 +279,13 @@ void login(){
 			Green();
 			printf("Login Success");
 			reset();
+			//reset
+			int o = 0;
+			for(o = 0;o<15;o++){
+				password[o] = 0;
+			}
+			ch = 0;
+			characterPosition = 0;
 			Sleep(1000);
 			admin_mode();
 		}else{
