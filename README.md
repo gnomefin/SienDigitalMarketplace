@@ -407,7 +407,7 @@ Kemudian didalam menu inventaris tersebut kita dapat menambahkan barang , mengha
 
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/bantuan%2013.PNG"></p>
 
-Source Code Untuk `Input Barang` , `Delete Barang` , `Sorting Barang` , dan `Search Barang` lalu `Print Barang`  :
+Source Code Untuk `insert` , `delete_node` , `sort` , `search`, dan `print_the_list`:
 ```c
 void insert(char* name, int price){
     Node* new_node = (Node* ) malloc(sizeof(Node));
@@ -517,28 +517,10 @@ void delete_node()
 }
  ```
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2010.PNG"></p>
-
-Source Code ketika tiap kita `Input Barang` , `Delete Barang` , `Sorting Barang` , dan `Search Barang` lalu `Print Barang` : 
- ```c
-void print_the_list()
-{
-    printf("\n");
-    printf("Data Inventaris Anda Sekarang : \n");
-    Node* temp=atas;
-    printf("\n");
-    while(temp!=NULL)
-    {
-        printf("%25s",temp->name);
-        printf("%25d",temp->price);
-        temp=temp->next;
-        printf("\n");
-    }
-}
- ```
-Di bagian akhir ketika data terakhir sudah terprint kami menyimpannya di excel dalam bentuk  `csv` :
-
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/Bantuan%2011.PNG"></p>
 
+Dan disimpan pada database dengan bentuk **-.csv** (*Comma Separated Values Microsoft Excel*) :
+<p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database_inventaris.PNG"></p>
 Source Code untuk bagian ini adalah : 
  ```c
  void database_inventaris(){
