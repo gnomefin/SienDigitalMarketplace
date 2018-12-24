@@ -576,15 +576,15 @@ fahrialamsyah231@gmail.com / 081316259144
 ### Pembagian Tugas
 Alfian dan Fahri : Diskusi bersama terkait program yang akan dibuat, gambaran program kedepannya dengan berdasarkan inspirasi dari amazon dan juga dari buku buku terkait program supermarket pada umumnya disini kami membuatnya lebih menarik dengan menggunakan ASCII dan arrow dalam menu sehingga membuat pembeli semakin percaya diri dalam belanja.
 
-Alfian : - Pengaplikasian materi perkuliahan dalam membuat program
-	 - Membuat modular sistematis
-	 - Editing comment pada program
-	 - Design User Interface dan GiftHub
+Alfian : * Pengaplikasian materi perkuliahan dalam membuat program
+	 * Membuat modular sistematis
+	 * Editing comment pada program
+	 * Design User Interface dan GiftHub
 	 
-Fahri :  - Pengaplikasian materi perkuliahan dalam membuat program 
-	 - Membuat bagian modular detail 
-	 - Membuat Flowchart
-	 - Penyelesaian Gifthub
+Fahri :  * Pengaplikasian materi perkuliahan dalam membuat program 
+	 * Membuat bagian modular detail 
+	 * Membuat Flowchart
+	 * Penyelesaian Gifthub
 	 
 ---
 
