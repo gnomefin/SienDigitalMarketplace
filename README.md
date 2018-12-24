@@ -521,7 +521,9 @@ void delete_node()
 
 Dan disimpan pada database dengan bentuk **-.csv** (*Comma Separated Values Microsoft Excel*) :
 <p align="center"><img src="https://github.com/bloodberrys/SienDigitalMarketplace/blob/master/Documentation/database_inventaris.PNG"></p>
+
 Source Code untuk bagian ini adalah : 
+
  ```c
  void database_inventaris(){
 	
