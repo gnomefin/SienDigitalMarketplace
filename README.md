@@ -9,7 +9,7 @@
 	+ [User Usage Documentation](#user-usage-documentation)
 	+ [Admin Usage Documentation](#admin-usage-documentation)
 * [Contact Person](#contact-person)
-
+* [Pembagian Tugas](#pembagian-tugas)
 ## Description
 **SIEN Digital Marketplace, Ltd.** adalah sebuah prototype dari sebuah platform layanan perbelanjaan digital, dimana kami ingin membuat kepercayaan dalam berbelanja seperti layaknya di Supermarket dengan konsep yang cepat, fleksibel dan efisien sehingga tidak memakan waktu berharga Anda. 
 
@@ -572,7 +572,21 @@ alfian.firmansyah@ui.ac.id / 083870975096
 
 fahrialamsyah231@gmail.com / 081316259144
 
+---
+### Pembagian Tugas
+Alfian dan Fahri : Diskusi bersama terkait program yang akan dibuat, gambaran program kedepannya dengan berdasarkan inspirasi dari amazon dan juga dari buku buku terkait program supermarket pada umumnya disini kami membuatnya lebih menarik dengan menggunakan ASCII dan arrow dalam menu sehingga membuat pembeli semakin percaya diri dalam belanja.
 
+Alfian : - Pengaplikasian materi perkuliahan dalam membuat program
+	 - Membuat modular sistematis
+	 - Editing comment pada program
+	 - Design User Interface dan GiftHub
+	 
+Fahri :  - Pengaplikasian materi perkuliahan dalam membuat program 
+	 - Membuat bagian modular detail 
+	 - Membuat Flowchart
+	 - Penyelesaian Gifthub
+	 
+---
 
 
 
